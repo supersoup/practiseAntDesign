@@ -9,6 +9,7 @@ const Routes = ({ history }) =>
     (
       <Router history={history}>
         <Route path="/" component={Wrap}>
+          <IndexRoute component={UserList} />
           <Route path="list" component={UserList}></Route>
           <Route path="update" component={UserUpdate}></Route>
         </Route>
