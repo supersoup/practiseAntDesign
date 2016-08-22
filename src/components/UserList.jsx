@@ -5,9 +5,11 @@ import { DatePicker } from 'antd';
 const UserList = ({ location }) => {
   return (
     <div>
+
       <div>
         <DatePicker />
       </div>
+
       <table>
         <tbody>
           <tr>
@@ -28,6 +30,7 @@ const UserList = ({ location }) => {
           </tr>
         </tbody>
       </table>
+
     </div>
   );
 };
