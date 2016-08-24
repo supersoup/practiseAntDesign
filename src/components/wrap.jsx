@@ -2,26 +2,26 @@
 import React, { Component, PropTypes } from 'react';
 import { Router, Route, IndexRoute, Link } from 'react-router';
 
-require('./Wrap.less');
+import styles from './Wrap.less';
 
 
 const Wrap =  React.createClass({
       render() {
         return (
           <div>
-            <div className="header">
+            <div className={styles.header}>
               <h1>myAntDesign</h1>
             </div>
-            <div className="content">
-              <div className="menu">
+            <div className={styles.content}>
+              <div className={styles.menu}>
                 <div><Link to="/list">list</Link></div>
                 <div><Link to="/update">update</Link></div>
               </div>
-              <div className="main">
+              <div className={styles.main}>
                 {this.props.children}
               </div>
             </div>
-            <div className="footer">
+            <div className={styles.footer}>
               This is my first ant-design project.
             </div>
           </div>
